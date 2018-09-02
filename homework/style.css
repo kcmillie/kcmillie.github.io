@@ -1,0 +1,89 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 18px;
+    line-height: 1.428571429;
+    color: #2e2e2e;
+    background-color: #fff000;
+}
+
+.navbar{
+    color: #000000;
+    background-color: #f2345f;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    min-height: 48px;
+}
+
+.navbar-brand {
+  color: #ffffff;
+  background-color: #0FDDAF;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 50px;
+  font-size: 28px;
+}
+
+.nav-link{
+    font-size: 18px;
+    color: #000000;
+}
+
+.nav-sidebar {
+    transition: width 0.3s, left 0.3s;
+    position: fixed;
+    z-index: 400;
+    width: 200px;
+    top: 52px;
+    bottom: 0;
+    right: 50px;
+    background-color: #a345af;
+    box-shadow: inset -2px 0 0 #e5e5e5;
+    transform: translate3d(0, 0, 0);
+}
+
+.box {
+  min-height: 50px;
+  padding: 20px;
+  margin: 20px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.box2 {
+  min-height: 50px;
+  padding: 10px;
+  margin: 10px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.main {
+  background: deepskyblue;
+}
+
+.side {
+  background: rebeccapurple;
+}
+
+.mini {
+  background: #ffccff;
+}
+
+.home {
+    height:25%;
+    width: 25%;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+@include media-breakpoint-down(lg) .page-with-sidebar {
+    padding-right: 220px;
+}
+
+@include media-breakpoint-down(sm) .page-with-sidebar {
+    padding-right: 0px;
+}
