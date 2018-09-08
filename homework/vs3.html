@@ -1,52 +1,94 @@
 <!doctype html>
-<html class="no-js" lang="eng-us">
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Visualization Page 3</title>
-  <!-- <meta name="description" content=""> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
-  <link rel="manifest" href="site.webmanifest">
-  <!--<link rel="apple-touch-icon" href="icon.png"> -->
-  <!-- Place favicon.ico in the root directory -->
+    <title>Max Temperature Plot</title>
+  </head>
 
-  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-  <link rel="stylesheet" href="css/main.css">
-</head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html">Lattitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-<body>
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-md-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Plots
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="VS1.html">Cloudiness</a>
+          <a class="dropdown-item" href="VS2.html">Humidity</a>
+          <a class="dropdown-item" href="VS3.html">Max Temperature</a>
+          <a class="dropdown-item" href="VS4.html">Wind Speed</a>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="CP.html">Comparison</a></li>
+      <li class="nav-item"><a class="nav-link" href="data.html">Data</a></li>
+    </ul>
+    </div>
+  </nav>
 
-  <!-- Add your site or application content here -->
-  <h1>Welcome To Visualization Page 3</h1>
-  <img src="#" alt="Plot2"/>
-  <p>This is a paragraph about Plot 3</p>
-  <!-- this is for the navigation menu -->
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="vs1.html">Visualization Page 1</a></li>
-    <li><a href="vs2.html">Visualization Page 2</a></li>
-    <li><a href="vs4.html">Visualization Page 4</a></li>
-    <li><a href="CP.html">Comparison Page 1</a></li>
-    <li><a href="data.html">Data Page 1</a></li>
-  </ul>
+    <div class="container-fluid">
+      <div class="row">
 
-  <!--<script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
-  <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>-->
+        <div class="col-sm-12 col-md-12 col-lg-8">
+          <div class="box main">
+            <h2>Comparison: Latitude vs. Maximum Temperature</h2>
+            <hr>
+            <div class="text-center">
+            <img class="vis" src="LatVMaxTemp.png">
+            </div>
+            <p>
+              The purpose of this plot was to see if there was any relationships between latitude and maximum temperature.  The city that had the highest maximum temperature has a latitude value that lays between +20 and +40 degrees.  As latitude values move away from +20 to +40 degrees, the maximum temperature experienced by a city decreases.
+            </p>
+          </div>
+        </div>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-</body>
+        <div class="col-sm-12 col-md-12 col-lg-4">
+          <div class="box side">
+            <h3>Visualizations</h3>
+            <hr>
+            <div class="row justify-content-center">
+              <div class="col-lg-5 col-sm-2 box2">
+                <a href="VS1.html">
+                  <img class="img-thumbnail" src="LatVCloud.png">
+                </a>
+              </div>
+              <div class="col-lg-5 col-sm-2 box2">
+                <a href="VS2.html">
+                  <img class="img-thumbnail" src="LatVHumid.png">
+                </a>
+              </div>
+              <div class="col-lg-5 col-sm-2 box2">
+                <a href="VS3.html">
+                  <img class="img-thumbnail active" src="LatVMaxTemp.png">
+                </a>
+              </div>
+              <div class="col-lg-5 col-sm-2 box2">
+                <a href="VS4.html">
+                  <img class="img-thumbnail" src="LatVWindSpeed.png">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
 
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
 </html>

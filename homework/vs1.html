@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
-    <title>Lattitude</title>
+    <title>Cloudiness Plot</title>
   </head>
 
   <body>
@@ -26,10 +26,10 @@
         Plots
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="VS1.html">Plot1</a>
-          <a class="dropdown-item" href="VS2.html">Plot2</a>
-          <a class="dropdown-item" href="VS3.html">Plot3</a>
-          <a class="dropdown-item" href="VS4.html">Plot4</a>
+          <a class="dropdown-item" href="VS1.html">Cloudiness</a>
+          <a class="dropdown-item" href="VS2.html">Humidity</a>
+          <a class="dropdown-item" href="VS3.html">Max Temperature</a>
+          <a class="dropdown-item" href="VS4.html">Wind Speed</a>
         </div>
       </li>
       <li class="nav-item"><a class="nav-link" href="CP.html">Comparison</a></li>
@@ -43,16 +43,13 @@
 
         <div class="col-sm-12 col-md-12 col-lg-8">
           <div class="box main">
-            <h1>Summary</h1>
+            <h2>Comparison: Latitude vs. Cloudiness</h2>
             <hr>
             <div class="text-center">
             <img class="vis" src="LatVCloud.png">
             </div>
             <p>
-              The purpose of this project was to analyze how weather changes as you get closer to the equator.To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble dataset on over 500 cities.
-            </p>
-            <p>
-              After assembling the dataset, we used Matplotlib to plot various aspects of weather vs. latitude.Factors we looked at included: temperature, cloudiness, wind speed, and humidity.  This site provides the source data and visualizations created as part of the analysis, as well as explainations and descriptions of any trends and correlations witnessed.
+              The purpose of this plot was to see if there was any relationships between latitude and cloudiness.  The plot shows that cloudiness is very random and is not impacted by the latitude of a city.
             </p>
           </div>
         </div>
